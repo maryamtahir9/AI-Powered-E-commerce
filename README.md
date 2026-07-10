@@ -1,106 +1,237 @@
 <div align="center">
 
-# 🛍️ AuraStore
+<img width="100%" alt="AuraStore banner" src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:EC4899&height=200&section=header&text=AuraStore&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Collaborative%20E-Commerce%20Storefront&descAlignY=58&descSize=18" />
 
-### AI-Powered Collaborative E-Commerce Storefront
+<br/>
 
-Personalized product recommendations, real-time similarity vectors, semantic mood-based search, and a conversational AI shopping stylist — all in one storefront.
+<em>Every shopper sees a different store — the one built just for them.</em>
 
-[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-4285F4?logo=googlegemini&logoColor=white)](https://ai.google.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#-license)
+<br/><br/>
 
-[Overview](#-overview) • [Features](#-features) • [Architecture](#-architecture) • [Getting Started](#-getting-started) • [Project Structure](#-project-structure) • [Results](#-results)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-AI_Core-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+
+<br/>
+
+<img src="https://img.shields.io/badge/AOV_Lift-%2B18%25-22C55E?style=flat-square" />
+<img src="https://img.shields.io/badge/Conversion-2.4x-22C55E?style=flat-square" />
+<img src="https://img.shields.io/badge/Recommendation_Latency-%3C50ms-22C55E?style=flat-square" />
+<img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" />
+
+<br/><br/>
+
+**[Live Demo](#)** &nbsp;·&nbsp; **[Documentation](#-table-of-contents)** &nbsp;·&nbsp; **[Report a Bug](#)** &nbsp;·&nbsp; **[Request a Feature](#)**
 
 </div>
 
+<br/>
+
 ---
 
-## 📖 Overview
+## 📋 Table of Contents
 
-Traditional e-commerce storefronts serve everyone the same generic catalog — leading to low conversion, high bounce rates, and stagnant average order values (AOV). **AuraStore** solves this with a real-time, hybrid recommendation engine that blends classic heuristics with generative AI, delivering a shopping experience that feels tailored to each visitor.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-The system combines:
+- [🎯 The Problem](#-the-problem)
+- [💡 The Solution](#-the-solution)
+- [✨ Features](#-features)
+- [📈 Results](#-results-that-matter)
+- [🏗️ How It Works](#️-how-it-works)
 
-- **Deterministic collaborative filtering** for speed and explainability
-- **Gemini-powered generative reasoning** for natural, persuasive product explanations
-- **Semantic natural-language search** for intent-based discovery
-- **A conversational shopping assistant** that recommends and adds items in real time
+</td>
+<td width="50%" valign="top">
+
+- [💻 Tech Stack](#-tech-stack)
+- [📂 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+- [🗺️ Roadmap](#️-roadmap)
+- [🤝 Contributing](#-contributing--license)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+## 🎯 The Problem
+
+<table>
+<tr>
+<td>
+
+Generic, one-size-fits-all storefronts are quietly killing conversion. When every visitor sees the same catalog in the same order, the result is predictable:
+
+- 📉 **High bounce rates** — nothing feels relevant, so shoppers leave
+- 🛑 **Low average order value** — no intelligent nudge toward complementary items
+- 😐 **Flat, forgettable browsing** — no sense that the store "gets" the shopper
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 💡 The Solution
+
+AuraStore fuses **deterministic collaborative filtering** with **generative AI reasoning** — the speed of heuristics, the persuasion of natural language.
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### ⚡
+**Instant**
+<br/>
+Client-side cosine similarity across catalog tags, computed in real time as shoppers browse
+
+</td>
+<td width="33%" align="center">
+
+### 🧠
+**Intelligent**
+<br/>
+Gemini 2.5 Flash turns raw similarity scores into natural, persuasive purchase rationales
+
+</td>
+<td width="33%" align="center">
+
+### 💬
+**Conversational**
+<br/>
+Lumi, the AI shopping stylist, recommends and adds items in a live chat experience
+
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
 
 ## ✨ Features
 
-### 🔗 Dynamic Heuristics & Collaborative Filtering
-Real-time interaction tracking (views, cart activity, search entries) feeds a **cosine similarity engine** across catalog tags, prioritizing products by category affinity and tag overlap — computed in-browser with sub-50ms latency.
+<details open>
+<summary><b>🔗 Dynamic Heuristics & Collaborative Filtering</b></summary>
+<br/>
 
-### 🧠 Generative Refinement with Gemini 2.5
-Context vectors are passed server-side to **Gemini 2.5 Flash**, which generates natural, one-sentence purchase rationales personalized to the shopper's behavior — turning raw similarity scores into persuasive, human-sounding copy.
+Real-time interaction tracking — views, cart activity, search entries — feeds a cosine similarity engine across catalog tags. Products surface based on active category affinity and tag overlap, computed **client-side in under 50ms**.
 
-### 🛒 Smart Cross-Selling Bundles
-A co-occurrence matrix identifies high-affinity accessory pairings and surfaces them as interactive bundles, automatically applying an **18% conversion discount** to incentivize multi-item checkout.
+</details>
 
-### 🔍 AI Semantic Mood Search
-A natural-language search bar interprets shopper *intent* — not just keywords — matching queries like *"cozy slow morning setup"* to relevant catalog items alongside an AI-generated mood summary.
+<details>
+<summary><b>🧠 Generative Refinement with Gemini 2.5</b></summary>
+<br/>
 
-### 💬 Interactive AI Shopping Stylist — "Lumi"
-A real-time chat assistant that understands shopper needs, recommends catalog items conversationally, and supports one-click add-to-cart directly from the chat.
+Context vectors are sent server-side to **Gemini 2.5 Flash**, which generates natural, one-sentence purchase rationales:
+
+> *"Shoppers who viewed your keyboard setup frequently bundled this cork desk pad to protect their workspace and dampen acoustics."*
+
+</details>
+
+<details>
+<summary><b>🛒 Smart Cross-Selling Bundles</b></summary>
+<br/>
+
+A co-occurrence matrix isolates high-affinity accessory pairings and displays them as interactive bundles, automatically applying an **18% conversion discount**.
+
+</details>
+
+<details>
+<summary><b>🔍 AI Semantic Mood Search</b></summary>
+<br/>
+
+A natural-language search bar reads *intent*, not just keywords. Try *"cozy slow morning setup"* and get matched catalog items plus an AI-generated mood summary.
+
+</details>
+
+<details>
+<summary><b>💬 Interactive AI Shopping Stylist — Lumi</b></summary>
+<br/>
+
+A real-time chat helper that understands shopper needs, suggests catalog items conversationally, and supports one-click add-to-cart directly from the chat window.
+
+</details>
+
+<br/>
 
 ### 👥 Simulated Shopper Personas
-Four preconfigured personas demonstrate the personalization engine across distinct shopping behaviors:
 
-| Persona | Focus |
-|---|---|
-| 💻 Minimalist Developer | Workspace & audio gear |
-| ☕ Artisan Home & Coffee Lover | Cozy decor & kitchen |
-| ⚡ Performance Biohacker | Wearables & health |
-| 🌟 New Anonymous Shopper | General discovery |
+<div align="center">
 
----
+| | Persona | Focus Area |
+|:---:|---|---|
+| 💻 | **Minimalist Developer** | Workspace & audio gear |
+| ☕ | **Artisan Home & Coffee Lover** | Cozy decor & kitchen |
+| ⚡ | **Performance Biohacker** | Wearables & health |
+| 🌟 | **New Anonymous Shopper** | General discovery |
 
-## 📈 Results
+</div>
 
-| Metric | Impact |
-|---|---|
-| **Average Order Value (AOV)** | ⬆️ **+18%** via predictive discount bundling |
-| **Conversion Rate** | ⬆️ **2.4x** through reduced browsing friction |
-| **Recommendation Latency** | ⚡ Sub-50ms heuristic matrix computation |
-| **AI Response** | 🌊 Streaming inference for real-time styling advice |
+<br/>
 
 ---
 
-## 🏗️ Architecture
+## 📈 Results That Matter
 
-```
-┌─────────────────────┐       ┌──────────────────────┐       ┌─────────────────┐
-│   React Frontend     │──────▶│  Express Backend      │──────▶│  Gemini 2.5      │
-│  (Vite + Tailwind)   │◀──────│  (Secure API Proxy)   │◀──────│  Flash API       │
-└─────────────────────┘       └──────────────────────┘       └─────────────────┘
-        │                              │
-        ▼                              ▼
- Cosine similarity              Personalized copy,
- matrix (client-side)           mood search, chat
+<div align="center">
+
+| 📊 Metric | 📈 Impact |
+|:---|:---:|
+| **Average Order Value** | 🟢 **+18%** |
+| **Conversion Rate** | 🟢 **2.4x** |
+| **Recommendation Latency** | 🟢 **< 50ms** |
+| **AI Response Delivery** | 🟢 **Streaming** |
+
+</div>
+
+<br/>
+
+---
+
+## 🏗️ How It Works
+
+```mermaid
+flowchart LR
+    A[👤 Shopper Interaction] --> B[Client-Side Cosine<br/>Similarity Engine]
+    B --> C{High-Affinity<br/>Match Found?}
+    C -->|Yes| D[Instant Product<br/>Surfacing < 50ms]
+    B --> E[Express Proxy]
+    E --> F[Gemini 2.5 Flash]
+    F --> G[Personalized Copy /<br/>Mood Summary / Chat]
+    D --> H[🛍️ Personalized Storefront]
+    G --> H
 ```
 
-**How it works:**
-1. The frontend tracks shopper interactions and computes real-time tag-based cosine similarity across the catalog.
-2. High-affinity products and bundles are surfaced instantly using the heuristic layer — no network round-trip required.
-3. The Express backend proxies enriched context vectors to Gemini 2.5 Flash, keeping the API key secure server-side.
-4. Gemini returns natural-language purchase rationales, mood summaries, and chat responses, streamed back to the UI.
+**The flow:**
+1. The frontend tracks shopper interactions and computes real-time tag-based similarity across the catalog — entirely client-side.
+2. High-affinity products and bundles surface instantly, no network round-trip required.
+3. Enriched context vectors are proxied through the Express backend to Gemini 2.5 Flash, keeping the API key secure.
+4. Gemini streams back natural-language rationales, mood summaries, and chat responses.
+
+<br/>
 
 ---
 
 ## 💻 Tech Stack
 
+<div align="center">
+
 | Layer | Technology |
 |---|---|
-| **Frontend** | React 18, Vite, TypeScript, Tailwind CSS, Lucide Icons, Canvas Confetti |
-| **Backend** | Node.js, Express (server-side proxy for secure key handling) |
-| **AI Core** | Gemini 2.5 Flash via `@google/genai` SDK |
-| **State** | Modular React state flows with persona-driven simulation |
+| **Frontend** | ![React](https://img.shields.io/badge/-React_18-61DAFB?logo=react&logoColor=white&style=flat-square) ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat-square) ![Tailwind](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square) |
+| **Backend** | ![Node](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat-square) ![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white&style=flat-square) |
+| **AI Core** | ![Gemini](https://img.shields.io/badge/-Gemini_2.5_Flash-4285F4?logo=googlegemini&logoColor=white&style=flat-square) `@google/genai` SDK |
+| **UI Extras** | Lucide Icons · Canvas Confetti |
+
+</div>
+
+<br/>
 
 ---
 
@@ -126,71 +257,97 @@ Four preconfigured personas demonstrate the personalization engine across distin
 │       └── MLMatrixVisualizer.tsx     # Interactive cosine similarity heatmap
 ```
 
+<br/>
+
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js** v18 or higher
-- A **Gemini API key** — [get one here](https://ai.google.dev/)
 
-### 1. Clone & Install
+![Node](https://img.shields.io/badge/Node.js-≥18-339933?style=flat-square&logo=node.js&logoColor=white)
+&nbsp;
+![Gemini Key](https://img.shields.io/badge/Requires-Gemini_API_Key-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
+
+### 1️⃣ Clone & Install
+
 ```bash
 git clone https://github.com/your-username/aurastore.git
 cd aurastore
 npm install
 ```
 
-### 2. Configure Environment
+### 2️⃣ Configure Environment
+
 Create a `.env` file at the project root:
+
 ```env
 GEMINI_API_KEY="YOUR_API_KEY_HERE"
 ```
 
-### 3. Run Locally
+### 3️⃣ Run Locally
+
 ```bash
 npm run dev
 ```
-The app will be available at `http://localhost:5173` (frontend) with the Express proxy running alongside it.
 
-### 4. Build for Production
+App runs at `http://localhost:5173` with the Express proxy alongside it.
+
+### 4️⃣ Build for Production
+
 ```bash
 npm run build
-npm run preview   # optional: preview the production build locally
+npm run preview   # optional: preview the production build
 ```
+
+<br/>
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] Persistent user accounts & order history
-- [ ] Real payment gateway integration
-- [ ] A/B testing harness for recommendation strategies
-- [ ] Multi-language semantic search
-- [ ] Admin dashboard for catalog & bundle management
+- [ ] 🔐 Persistent user accounts & order history
+- [ ] 💳 Real payment gateway integration
+- [ ] 🧪 A/B testing harness for recommendation strategies
+- [ ] 🌐 Multi-language semantic search
+- [ ] 📊 Admin dashboard for catalog & bundle management
+
+<br/>
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing & License
 
-Contributions are welcome! Please open an issue to discuss significant changes before submitting a pull request.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create a branch: `git checkout -b feature/amazing-feature`
+3. Commit: `git commit -m 'Add amazing feature'`
+4. Push: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
----
+</td>
+<td width="50%" valign="top">
 
-## 📄 License
+### License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the **MIT License**.
+See `LICENSE` for details.
 
----
+</td>
+</tr>
+</table>
+
+<br/>
 
 <div align="center">
 
-Built with ❤️ using React, Express, and Gemini AI
+<img width="100%" alt="AuraStore footer" src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,100:6366F1&height=100&section=footer" />
+
+Built with ❤️ using React, Express & Gemini AI
 
 </div>
