@@ -341,6 +341,6 @@ See `LICENSE` for details.
 
 <img width="100%" alt="AuraStore footer" src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,100:6366F1&height=100&section=footer" />
 
-Built with ❤️ using React, Express & Gemini AI
+Dveloped by Maryam Tahir using React, Express 
 
 </div>
