@@ -47,7 +47,7 @@
 
 - [💻 Tech Stack](#-tech-stack)
 - [📂 Project Structure](#-project-structure)
-- [🚀 Getting Started](#-getting-started)
+- [🚀 Run Locally](#-run-locally)
 - [🗺️ Roadmap](#️-roadmap)
 - [🤝 Contributing](#-contributing--license)
 
@@ -261,39 +261,32 @@ flowchart LR
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Run Locally
 
-### Prerequisites
+**Prerequisites:** [Node.js](https://nodejs.org/) v18 or higher
 
-![Node](https://img.shields.io/badge/Node.js-≥18-339933?style=flat-square&logo=node.js&logoColor=white)
-&nbsp;
-![Gemini Key](https://img.shields.io/badge/Requires-Gemini_API_Key-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### 1️⃣ Clone & Install
+2. **Configure your API key**
 
-```bash
-git clone https://github.com/your-username/aurastore.git
-cd aurastore
-npm install
-```
+   Create a `.env.local` file in the project root (or rename `.env.example` if one exists) and add your [Gemini API key](https://ai.google.dev/):
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
 
-### 2️⃣ Configure Environment
+3. **Start the dev server**
+   ```bash
+   npm run dev
+   ```
 
-Create a `.env` file at the project root:
+   The app will be running at `http://localhost:5173` 🎉
 
-```env
-GEMINI_API_KEY="YOUR_API_KEY_HERE"
-```
+> **Note:** Keep `.env.local` out of version control — it should already be listed in `.gitignore`.
 
-### 3️⃣ Run Locally
-
-```bash
-npm run dev
-```
-
-App runs at `http://localhost:5173` with the Express proxy alongside it.
-
-### 4️⃣ Build for Production
+### Build for Production
 
 ```bash
 npm run build
